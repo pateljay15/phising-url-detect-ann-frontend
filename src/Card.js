@@ -89,7 +89,7 @@ function Main() {
                             </>
                         ) : (
                             <>
-                                <h2 style={{color: "green"}}>Beignant URL</h2>
+                                <h2 style={{color: "green"}}>Benignant URL</h2>
                             </>
                         )}
                     </>
