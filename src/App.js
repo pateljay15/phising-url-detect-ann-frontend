@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavItem, NavbarBrand, NavbarToggler,Navbar, Collapse, DropdownMenu, DropdownItem, NavbarText,  Nav, NavLink,UncontrolledDropdown, DropdownToggle, Container  } from "reactstrap"
+import Card from './Card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className='App' style={{backgroundColor: "#172b4d", height:"100%"}}>
+        <Navbar
+          color="dark"
+          dark
+          expand="md"
+          light
         >
-          Learn React
-        </a>
-      </header>
+          <NavbarBrand href="/">
+            Phising URL Prediction
+          </NavbarBrand>
+        </Navbar>
+        <Container className='py-500' style={{height: "643px"}}>
+          <Card />
+        </Container>
     </div>
   );
 }
