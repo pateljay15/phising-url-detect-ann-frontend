@@ -1,23 +1,19 @@
 import './App.css';
-import { NavItem, NavbarBrand, NavbarToggler,Navbar, Collapse, DropdownMenu, DropdownItem, NavbarText,  Nav, NavLink,UncontrolledDropdown, DropdownToggle, Container  } from "reactstrap"
 import Card from './Card';
+import Footer from './Components/Footer';
+import Home from './Components/Home';
+import Navbar from './Components/Navbar';
+import TechStack from './Components/TechStack';
+import "./css/style.css"
+import "./css/utilities.css"
 
 function App() {
   return (
-    <div className='App' style={{backgroundColor: "#172b4d", height:"100%"}}>
-        <Navbar
-          color="dark"
-          dark
-          expand="md"
-          light
-        >
-          <NavbarBrand href="/">
-            Phising URL Prediction
-          </NavbarBrand>
-        </Navbar>
-        <Container className='py-500' style={{height: "643px"}}>
-          <Card />
-        </Container>
+    <div>
+      <Navbar />
+      <Home />
+      <TechStack />
+      <Footer />
     </div>
   );
 }
